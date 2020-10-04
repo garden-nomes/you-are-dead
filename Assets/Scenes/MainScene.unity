@@ -871,7 +871,7 @@ MonoBehaviour:
   deathTitle: you are dead
   rebirthTitle: you are reborn
   lifeTitle: you live a long, full life
-  escapeText: you have escaped
+  escapeText: you are free
   credits0Text: a game by noah weiner
   credits1Text: thanks for playing
   titleBeatTime: 0.5

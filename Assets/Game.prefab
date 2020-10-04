@@ -3315,7 +3315,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   rowForce: 8
   rowInterval: 1
-  turnSpeed: 157.5
+  turnSpeed: 150
   maxVortexForce: 10
   currentForce: 0.5
   vortexTime: 1.5
