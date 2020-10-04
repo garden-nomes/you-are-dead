@@ -2,6 +2,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
+using Cinemachine;
 using UnityEngine;
 using UnityEngine.Audio;
 
@@ -19,6 +20,7 @@ public class Rowboat : MonoBehaviour
     public float oarResetTime = .3f;
     public float vortexSpinSpeed = 720f;
     public float fadeAudioTime = 2f;
+    public float vortexNoiseStrength = 1f;
     public River river;
 
     public Transform leftOar;
@@ -27,6 +29,7 @@ public class Rowboat : MonoBehaviour
     public Transform rightTrail;
 
     public AudioMixer masterMixer;
+    public CinemachineVirtualCamera camera;
 
     public Action OnRebirth;
 
@@ -130,6 +133,8 @@ public class Rowboat : MonoBehaviour
         var vortexes = FindObjectsOfType<Vortex>();
         var result = new List<GameObject>(vortexes.Length);
 
+        var noise = 0f;
+
         foreach (var vortex in vortexes)
         {
             var toVortex = (Vector2)(vortex.transform.position - transform.position);
@@ -137,6 +142,8 @@ public class Rowboat : MonoBehaviour
 
             if (distance < vortex.strength * 5f)
             {
+                noise += Mathf.Max(0f, vortex.radius * 2f - distance) * vortexNoiseStrength;
+
                 var force = vortex.strength / Mathf.Pow(distance, 1.5f);
                 force = Mathf.Min(force, maxVortexForce);
                 rb.AddForce(toVortex.normalized * force);
@@ -147,6 +154,8 @@ public class Rowboat : MonoBehaviour
                 }
             }
         }
+
+        camera.GetCinemachineComponent<CinemachineBasicMultiChannelPerlin>().m_AmplitudeGain = noise;
     }
 
     void FadeInAudio()

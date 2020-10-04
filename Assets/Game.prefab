@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 382940897}
   - component: {fileID: 382940896}
   - component: {fileID: 382940895}
+  - component: {fileID: 7180206783736741536}
   m_Layer: 0
   m_Name: cm
   m_TagString: Untagged
@@ -94,6 +95,23 @@ MonoBehaviour:
   m_YawDamping: 0
   m_RollDamping: 0
   m_AngularDamping: 0
+--- !u!114 &7180206783736741536
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 382940893}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 68bb026fafb42b14791938953eaace77, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_NoiseProfile: {fileID: 11400000, guid: accfe5920a5f74258acc8010186bca29, type: 2}
+  m_PivotOffset: {x: 0, y: 0, z: 0}
+  m_AmplitudeGain: 0
+  m_FrequencyGain: 1
+  mNoiseOffsets: {x: 0, y: 0, z: 0}
 --- !u!1 &426417398
 GameObject:
   m_ObjectHideFlags: 0
@@ -217,6 +235,7 @@ GameObject:
   - component: {fileID: 1577765362}
   - component: {fileID: 1577765361}
   - component: {fileID: 1577765363}
+  - component: {fileID: 342080623620072870}
   m_Layer: 0
   m_Name: Game Camera
   m_TagString: Untagged
@@ -289,6 +308,21 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   light: {fileID: 1894442696}
+--- !u!114 &342080623620072870
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1577765360}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 00b2d199b96b516448144ab30fb26aed, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_ChannelMask: 1
+  m_Gain: 1
+  m_Use2DDistance: 1
 --- !u!1 &1621115740
 GameObject:
   m_ObjectHideFlags: 0
@@ -3325,12 +3359,14 @@ MonoBehaviour:
   oarResetTime: 0.3
   vortexSpinSpeed: 720
   fadeAudioTime: 2
+  vortexNoiseStrength: 0.09375
   river: {fileID: 7962302224536324115}
   leftOar: {fileID: 7962302224281766756}
   rightOar: {fileID: 7962302223363959986}
   leftTrail: {fileID: 7962302223374765681}
   rightTrail: {fileID: 7962302224091695170}
   masterMixer: {fileID: 24100000, guid: 46b40633becbf45dfa479f6dbe59fffc, type: 2}
+  camera: {fileID: 1577765361}
 --- !u!50 &7962302224213284356
 Rigidbody2D:
   serializedVersion: 4
