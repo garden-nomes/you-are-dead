@@ -27,7 +27,6 @@ public class Rowboat : MonoBehaviour
     public Transform rightTrail;
 
     public AudioMixer masterMixer;
-    public AudioMixerGroup gameMixer;
 
     public Action OnRebirth;
 
@@ -54,7 +53,7 @@ public class Rowboat : MonoBehaviour
 
     void Update()
     {
-        var areOarsForward = Input.GetKey(KeyCode.UpArrow) && rowTimer > 0.5f;
+        var areOarsForward = rowTimer > 0.5f;
         oarStroke += Time.deltaTime / (areOarsForward ? oarStrokeTime : -oarResetTime);
         oarStroke = Mathf.Clamp01(oarStroke);
 
