@@ -1,0 +1,36 @@
+fileFormatVersion: 2
+guid: c086aa5acb67c40cbb63a78939ffa7d5
+TrueTypeFontImporter:
+  externalObjects: {}
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontNames:
+  - Piazzolla
+  fallbackFontReferences:
+  - {fileID: 12800000, guid: 7069e441c0f5a41b9ab1bab30b5cd885, type: 3}
+  - {fileID: 12800000, guid: a0d95d338217744019176b5e5a456545, type: 3}
+  - {fileID: 12800000, guid: 60de48c31b2b547299ab9c96c01563a1, type: 3}
+  - {fileID: 12800000, guid: 708473d4aa19542c5b42ff42f09c73bb, type: 3}
+  - {fileID: 12800000, guid: 600555452a64f4efaa9aefc440dd2013, type: 3}
+  - {fileID: 12800000, guid: 0025f957f9b3746f8ad9219f0ec363e9, type: 3}
+  - {fileID: 12800000, guid: 2053bc28655bb45d4942ec32d4d47d1b, type: 3}
+  - {fileID: 12800000, guid: 80e7c2886898540e68211a03a773eb27, type: 3}
+  - {fileID: 12800000, guid: 3044aed8bde0b423ba3baef7043853ef, type: 3}
+  - {fileID: 12800000, guid: 9006f6ca4ef154794beb14d212e44d20, type: 3}
+  - {fileID: 12800000, guid: 302dd39b834d14ff0ad7cbaa13e23b05, type: 3}
+  - {fileID: 12800000, guid: 008419ab1241841bcaa893a8a50c8a71, type: 3}
+  - {fileID: 12800000, guid: 80160cbd62b01478cb0e2ce15c793bd0, type: 3}
+  - {fileID: 12800000, guid: 1006a97eb688341b5afb568b67e35e94, type: 3}
+  - {fileID: 12800000, guid: 10b9b08e145f5402c9f58b9c4dd1040e, type: 3}
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  useLegacyBoundsCalculation: 0
+  shouldRoundAdvanceValue: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
