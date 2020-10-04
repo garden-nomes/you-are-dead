@@ -772,7 +772,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d8916ff1cba9b4702808ee5ef774f2d3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  goal: 300
+  goal: 400
   exp: 20
   minimum: 0
   slope: 0.15
@@ -3315,7 +3315,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   rowForce: 8
   rowInterval: 1
-  turnSpeed: 135
+  turnSpeed: 157.5
   maxVortexForce: 10
   currentForce: 0.5
   vortexTime: 1.5
@@ -3331,7 +3331,6 @@ MonoBehaviour:
   leftTrail: {fileID: 7962302223374765681}
   rightTrail: {fileID: 7962302224091695170}
   masterMixer: {fileID: 24100000, guid: 46b40633becbf45dfa479f6dbe59fffc, type: 2}
-  gameMixer: {fileID: 0}
 --- !u!50 &7962302224213284356
 Rigidbody2D:
   serializedVersion: 4
