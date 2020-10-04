@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 382940897}
   - component: {fileID: 382940896}
   - component: {fileID: 382940895}
-  - component: {fileID: 7180206783736741536}
+  - component: {fileID: 6899074478029408822}
   m_Layer: 0
   m_Name: cm
   m_TagString: Untagged
@@ -95,7 +95,7 @@ MonoBehaviour:
   m_YawDamping: 0
   m_RollDamping: 0
   m_AngularDamping: 0
---- !u!114 &7180206783736741536
+--- !u!114 &6899074478029408822
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -3349,7 +3349,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   rowForce: 8
   rowInterval: 1
-  turnSpeed: 150
+  turnSpeed: 160
   maxVortexForce: 10
   currentForce: 0.5
   vortexTime: 1.5
